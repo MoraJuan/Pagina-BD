@@ -1,0 +1,16 @@
+Un negocio que se dedica a la venta de bienes que pertenecen a distintos rubros, quiere generar una base de datos para tener una mejor 
+gestión y más control de sus actividades.
+Este negocio posee una sucursal en la que tiene varios empleados, de los cuales se conoce su nombre, apellido y DNI. Estos empleados 
+atienden a un número N de clientes al día, por cada clientes nuevo que tengan guardan su nombre, apellido y le asignan un ID, esto lo 
+hacen por si el cliente vuelve a comprar en el negocio y así poder sumarle puntos por sus futuras compras. El cliente puede cambiar 
+estos puntos por ofertas, esto lo puedo hacer si ha llegado a cierta cantidad de puntos. A fin de mes los empleados lanzan ofertas 
+para que los clientes puedan canjear sus puntos
+
+El negocio recibe visitas de distintos proveedores, uno de bebidas, uno de bebidas sin alcohol, uno de alimentos y otro de hogar.
+De cada proveedor se almacena su nombre, apellido, CUIL, la empresa a la que pertenece y lo que provee.
+
+El negocio tiene que rendir cuentas a la AFIP una vez al mes, en esta operación se tienen los siguientes datos: fecha, cantidad de dinero 
+recaudado en el mes, gastos y el importe que abona en criterio de impuestos.
+
+El negocio posee un stock de mercaderías disponibles. Se tiene almacenado: el nombre del producto, marca, cantidad, gramos/mililitros.
+Una vez a la semana los empleados realizan una revisión del stock, para ver si es necesario solicitar al proveedor mercadería.

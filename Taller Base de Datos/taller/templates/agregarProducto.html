@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Agregar Productos</title>
+</head>
+<body>
+    <form action="{{ url_for('guardarProducto') }}" method="POST">
+        <label for="cuil">Tipo:</label>
+       <input type="text" id="tipo" name="tipo" required><br><br> 
+       
+       <label for="marca">Marca:</label>
+       <input type="text" id="marca" name="marca" required><br><br>
+
+       <label for="marca">Precio:</label>
+       <input type="text" id="precio" name="precio" required><br><br>
+
+       <label for="marca">Cantidad:</label>
+       <input type="text" id="cantidad" name="cantidad" required><br><br>
+       
+       <label for="proveedor">CUIL Proveedor:</label>
+        <input type="text" id="proveedor" name="proveedor" required><br><br>
+        
+       <input type="submit" value="Guardar">
+       <a href="{{ url_for('index') }}">
+           <button type="button">Volver a la página de inicio</button>
+       </a>
+</body>
+</html>

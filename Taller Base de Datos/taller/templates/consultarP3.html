@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Consulta 5</title>
+</head>
+<body>
+        <form action="{{ url_for('consultarP3') }}" method="get">
+        <h1>Productos con cantidad menor a o iguales a 100</h1>
+
+        <!-- Puedes agregar más elementos HTML según tus necesidades -->
+        {% for elem in tipos%}
+            <li>{{ elem }}</li>
+        {% endfor %}
+</body>
+</body>
+</html>

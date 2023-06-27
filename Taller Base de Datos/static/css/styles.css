@@ -1,0 +1,28 @@
+.boton{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+}
+
+.BotonMenu{
+    border-radius: 80px;
+    margin-top: -10px;
+    margin-bottom: 19.5px;
+    background-color: #6d6875;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition-duration: 500ms;
+    display: inline-block;
+}
+.BotonMenu:hover{
+    background-color: #edf2f4;
+}
+
+.table{
+    margin-top:5%;
+    display: flex;
+    justify-content: center;
+    color:white;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta 3</title>
+    <link rel="stylesheet" href="static/css/styles.css"> 
+
+</head>
+<body>
+    <form action="{{ url_for('consultarQCP') }}" method="get">
+        <h1>Clientes que compraron Cervezas y Pañales</h1>
+
+        <!-- Puedes agregar más elementos HTML según tus necesidades -->
+        {% for elem in listaN %}
+            <li>{{ elem }}</li>
+        {% endfor %}
+</body>
+</html>

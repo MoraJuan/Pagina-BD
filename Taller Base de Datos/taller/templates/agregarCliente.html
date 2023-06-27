@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Clientes</title>
+  <link rel="stylesheet" href="static/css/styles.css">  
+</head>
+<body>
+  <center>
+  <h2>Formulario de Clientes</h2>
+  
+  <form action="{{ url_for('guardarCliente') }}" method="POST">
+     <label for="cuil">CUIL:</label>
+      <input type="text" id="cuil" name="cuil" required><br><br>
+    
+    
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    
+    <input type="submit" value="Guardar">
+    <a href="{{ url_for('index') }}">
+      <button type="button">Volver a la página de inicio</button>
+    </a>
+  </form>
+</center>
+</body>
+</html>
