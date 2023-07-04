@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Facturacion</title>
+  <link rel="stylesheet" href="static/css/styles.css"> 
+</head>
+<body>
+  <h2>Nueva Facturacion</h2>
+  <h2>Aviso: {{aviso}}</h2>
+
+  <div class="form">
+    <form action="{{ url_for('guardarF') }}" method="POST">
+      <label for="fecha">Fecha:</label>
+     <input type="text" id="fecha" name="fecha" required><br><br>
+     
+     <label for="cantidad">Cantidad:</label>
+     <input type="text" id="cantidad" name="cantidad" required><br><br>
+     
+     <label for="idCliente">Id Cliente:</label>
+     <input type="text" id="idCliente" name="idCliente" required><br><br>
+ 
+     <label for="cuilE">Cuil Empleado:</label>
+     <input type="text" id="cuilE" name="cuilE" required><br><br>
+ 
+     <label for="tipoP">Tipo Producto:</label>
+     <input type="text" id="tipoP" name="tipoP" required><br><br>
+ 
+     <label for="marcaP">Marca Producto</label>
+     <input type="text" id="marcaP" name="marcaP" required><br><br>
+ 
+     <label for="tipoF">Tipo Factura</label>
+     <input type="text" id="tipoF" name="tipoF" required><br><br>
+     
+     <input type="submit" value="Guardar">
+     <a href="{{ url_for('index') }}">
+         <button type="button">Volver a la página de inicio</button>
+     </a>
+   </form>
+  </div>
+  
+  
+</body>
+</html>

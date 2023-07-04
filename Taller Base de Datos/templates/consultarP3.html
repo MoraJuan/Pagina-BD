@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>Consulta 5</title>
 </head>
 <body>
-    
+    <form action="{{ url_for('consultarP3') }}" method="get">
+        <h1>Productos con cantidad menor a o iguales a 100</h1>
+
+        <!-- Puedes agregar más elementos HTML según tus necesidades -->
+        {% for elem in tipos%}
+            <li>{{ elem }}</li>
+        {% endfor %}
+    </form>
+    <a href="{{ url_for('index') }}">
+        <button type="button">Volver a la página de inicio</button>
+    </a>
+</body>
 </body>
 </html>

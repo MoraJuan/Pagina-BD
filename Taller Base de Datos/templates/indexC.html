@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="static/css/styles.css">  
+</head>
+<body>
+    <h1>Consultas de la base de datos</h1>
+    <div class="boton">
+        <div>
+            <a class="BotonMenu" href="{{url_for('consultarCL')}}" > Cantidad de leche que se vendio</a><br><br>
+            <a class="BotonMenu" href="{{url_for('consultarCC')}}" > Clientes que comprar cerveza</a><br><br>
+            <a class="BotonMenu" href="{{url_for('consultarQCP')}}" > Consulta quienes han comprado dos productos ejemplo cerveza y pañales</a><br><br>
+            <a class="BotonMenu" href="{{url_for('consultarP')}}"  > Consulta que proveedores proveyeron chocolate </a><br><br>
+            <a class="BotonMenu" href="{{url_for('consultarP3')}}"  > Listado de producto que tenga menos de 3 unidades</a><br><br>
+        </div>
+    </div>
+</body>
+</html>

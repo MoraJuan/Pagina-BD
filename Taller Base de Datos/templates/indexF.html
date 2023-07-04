@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="static/css/styles.css">  
+</head>
+<body>
+    <h1>Consultas de la base de datos</h1>
+    <div class="boton">
+        <div>
+            <a class="BotonMenu" href="{{url_for('agregarCliente')}}"> Agregar Cliente</a><br><br>
+            <a class="BotonMenu" href="{{url_for('agregarEmpleado')}}"> Agregar Empleado</a><br><br>
+            <a class="BotonMenu" href="{{url_for('agregarProducto')}}"> Agregar Productos</a><br><br>
+            <a class="BotonMenu" href="{{url_for('agregarF')}}"> Agregar Facturacion</a> <br><br>
+            <a class="BotonMenu" href="{{url_for('agregarProveedor')}}"> Agregar Proveedor</a> <br><br>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de Empleado</title>
+  <link rel="stylesheet" href="static/css/styles.css"> 
+</head>
+<body>
+  <h2>Formulario de Proveedor</h2>
+  <h2>Aviso: {{aviso}}</h2>
+  <div class="form">
+    <form action="{{ url_for('guardarProveedor') }}" method="POST">
+        
+         <label for="cuil">CUIL:</label>
+        <input type="text" id="cuil" name="cuil" required><br><br>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+    
+        <label for="empresa">Empresa:</label>
+        <input type="text" id="empresa" name="empresa" required><br><br>
+    
+        <label for="provee">Provee:</label>
+        <input type="text" id="provee" name="provee" required><br><br>
+        
+        <input type="submit" value="Guardar">
+        <a href="{{ url_for('index') }}">
+            <button type="button">Volver a la página de inicio</button>
+        </a>
+        
+      </form>
+  </div>
+</body>
+</html>
